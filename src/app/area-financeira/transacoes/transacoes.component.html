@@ -1,5 +1,5 @@
 <app-card>
-  <h2 card-titulo class="lexto-lg">
+  <h2 card-titulo class="texto-lg">
     Movimentação financeira
   </h2>
 
@@ -10,12 +10,14 @@
           <app-transacao [transacao]="transacao" />
         </li>
       } @empty {
-        <li aria-hidden="true">Ainda não há transações.</li>
+        <li aria-hidden="true">
+          Ainda não há transações.
+        </li>
       }
     </ul>
 
     <app-botao class="botao-adicionar-transacao">
-      <img src="icones/moeda.svg" alt="" class="icone-moeda" />
+      <img src="icones/moeda.svg" alt="" class="icone-moeda">
       Adicionar transação
     </app-botao>
   </div>
